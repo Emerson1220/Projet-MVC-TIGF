@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- CSS -->
+    <link href="<?= URL; ?>css/globalsheet.css" rel="stylesheet">
+    <link href="<?= URL; ?>css/stylesheet.css" rel="stylesheet">
+
+    </head>
+    <body class="page-login">
+        <section class="login-bg">
+            <div class="login">
+                <h1>Login</h1> 
+
+                <form  method="post">
+                    <table>
+                        <tr>
+                            <td>Pseudo</td>
+                            <td><input type="text" placeholder="username" name="username"> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mot de passe</td>
+                            <td><input type="password" placeholder="password" name="password"> </td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="submit_login">
+                </form>
+
+                <div class="nav-login">
+                    <a href="<?= URL; ?>">Revenir sur le site</a>
+                </div>     
+            </div>
+        </section>
+    </body>
+</html>
+
+
+
+

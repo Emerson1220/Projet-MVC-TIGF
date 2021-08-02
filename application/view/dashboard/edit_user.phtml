@@ -1,0 +1,28 @@
+<div class="container">
+    <!-- add menu form -->
+    <div class="box-input">
+        <div class = "add-dash">
+            <h3 class="text-align-center">Editer un utilisateur</h3>
+            <form action="<?= URL; ?>dashboard/updateuser" method="POST">
+                <div class="box-input lg">
+                    <label> Nom de l'utilisateur:</label>
+                    <input autofocus type="text" name="username" value="<?= htmlspecialchars($user->username, ENT_QUOTES, 'UTF-8'); ?>" required />
+                </div>
+                <div class="box-input">
+                    <label> Email:</label>
+                    <input type="text" name="usermail" value="<?= htmlspecialchars($user->usermail, ENT_QUOTES, 'UTF-8'); ?>" required />
+                </div>
+                <div class="box-input">
+                    <label> Contenu:</label>
+                    <input type="text" name="password" value="<?= htmlspecialchars($user->password, ENT_QUOTES, 'UTF-8'); ?>" />
+                </div>
+                <!-- Non visible - Hidden -->
+                <div class="box-input">
+                    <input type="hidden" name="id" value="<?= htmlspecialchars($user->id, ENT_QUOTES, 'UTF-8'); ?>" />
+                </div>
+                <input type="submit" name="submit_update_user" value="Mettre à jour" />
+            </form>
+        </div>
+    </div>
+</div>
+
